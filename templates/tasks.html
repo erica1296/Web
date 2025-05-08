@@ -22,6 +22,7 @@
         </li>
     </ul>
     <div class="row g-3">
+        {% if tarea %}
         <div class="col-md-6">
             <div class="card p-3">
                 <div class="d-flex justify-content-between">
@@ -80,7 +81,7 @@
             </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-çmd-6">
             <div class="card p-3">
                 <div class="d-flex justify-content-between">
                     <h5>Complete project proposal</h5>
@@ -137,6 +138,7 @@
                 </div>
             </div>
         </div>
+        {% else %}
     </div>
 </div>
 {% endblock %}
